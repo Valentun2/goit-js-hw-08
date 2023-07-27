@@ -22,4 +22,7 @@ galleryItems.map((item) => {
   .join("");
 
 container.insertAdjacentHTML("beforeend", elements);
-new SimpleLightbox('.gallery a', {  });
+new SimpleLightbox('.gallery a', { 
+   captionsData: "alt",
+   captionDelay: 250,
+ });

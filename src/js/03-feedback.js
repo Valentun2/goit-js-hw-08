@@ -4,7 +4,6 @@ form.addEventListener('input', throttle (onInput, 500));
 let result = {};
 
 function onInput(evt) {
-    console.log(evt);
     const event = evt.target
   if (event.name === 'email') {
     result.email = event.value;
