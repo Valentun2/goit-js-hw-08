@@ -14,8 +14,9 @@ function onInput(evt) {
 }
 
 result = JSON.parse(localStorage.getItem('feedback-form-state')) ?? {};
-form[0].value = result.email ?? '';
-form[1].value = result.message ?? '';
+const {email, message} = form.elements
+email.value = result.email ?? '';
+message.value = result.message ?? '';
 
 form.addEventListener('submit', onSubmit);
 function onSubmit(evt) {
